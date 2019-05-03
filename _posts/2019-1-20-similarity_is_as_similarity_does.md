@@ -5,7 +5,7 @@ tags: cognition, similarity, thematic, taxonomic, categories, paper
 season: winter 2019
 assets: none
 type: pdf
-external_url: https://www.sciencedirect.com/science/article/pii/S0010027719300228
+external_url: http://kurtzlab.psychology.binghamton.edu/publications/honke%20and%20kurtz%202019.pdf
 layout: external
 ---
 
