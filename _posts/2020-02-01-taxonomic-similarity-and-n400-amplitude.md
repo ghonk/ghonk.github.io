@@ -5,6 +5,6 @@ tags: similarity, cognition, neuroscience, paper
 season: winter 2020
 assets: none
 type: pdf
-external_url: https://www.sciencedirect.com/science/article/abs/pii/S0028393220300609?via%3Dihub
+external_url: /pdfs/manuscripts/honke-etal-2020.pdf
 layout: external
 ---
