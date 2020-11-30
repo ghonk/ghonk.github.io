@@ -1,6 +1,6 @@
 ---
 title: "Amber shutdown"
-excerpt: "My Main project at X was opensourced today: Sharing Project Amber with the mental health community"
+excerpt: "My Main project at X was opensourced today: Sharing Project Amber with the mental health community."
 season: fall 2020
 assets: none
 type: blog
