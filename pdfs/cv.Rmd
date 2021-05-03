@@ -35,7 +35,9 @@ BA Psychology \hfill 2004 - 2008
 
 # Research Positions
 
-Research Scientist, X, the Moonshot Factory (FKA Google X) \hfill 2019 - Present
+Senior Research Scientist, X, the Moonshot Factory (FKA Google X) \hfill 2021 - Present
+
+Research Scientist, X, the Moonshot Factory (FKA Google X) \hfill 2019 - 2021
 
 Research Scientist, New Knowledge \hfill 2018 - 2019
 
@@ -57,7 +59,7 @@ Research Assistant, Similarity and Cognition Laboratory \hfill 2005 - 2007
 
 # Refereed Publications and Presentations
 
-Honke, G., Higgins, I., Thigpen, N., Miskovic, V., Link, K., Duan, S., Gupta, P., Klawohn, J., & Hajcak, G. (Accepted). Representation learning for improved interpretability and classification accuracy of clinical factors from EEG. arXiv:2010.15274. To appear at ICLR 2021.
+Honke, G., Higgins, I., Thigpen, N., Miskovic, V., Link, K., Duan, S., Gupta, P., Klawohn, J., & Hajcak, G. (2021). Representation learning for improved interpretability and classification accuracy of clinical factors from EEG. arXiv:2010.15274. ICLR 2021.
 
 Cakmak, A. S., Thigpen, N., Honke, G., Alday, E. P., Rad, A, B.,, Adaimi, R., Chang, C. J., Li, Q., Gupta, P., Neylan, T., McLean, S. A., & Clifford, G. D. (2020). Using Convolutional Variational Autoencoders to Predict Post-Trauma Health Outcomes from Actigraphy Data. Neurips 2020 ML4MH workshop, accepted as a spotlight talk.
 
