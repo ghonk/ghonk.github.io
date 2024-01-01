@@ -7,7 +7,7 @@ type: blog
 layout: post
 ---
 
-This project investigated the effectiveness of using the connectivity structure of real biological connectomes (e.g., Drosophila) as interchangeable reservoir layers in SoTA neural architectures like UNets, LSTMs, and Transformers.  
+This project investigated the effectiveness of using the connectivity structure of mapped biological connectomes (e.g., Drosophila) as interchangeable reservoir layers in SoTA neural architectures like UNets, LSTMs, and Transformers.  
 
 *Ensemble machine learning with reservoir neural networks* 
 

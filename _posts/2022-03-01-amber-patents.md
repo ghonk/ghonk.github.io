@@ -1,6 +1,6 @@
 ---
 title: "Amber Patents"
-excerpt: "We filed a ton of patents for technology supporting our work on advanced diagnostics and monitoring for mental health including filings on the earliest known use of transformer architectures for electrophysiological representation learning."
+excerpt: "We filed a ton of patents for technology supporting our work on advanced diagnostics and monitoring for mental health including filings on the earliest known use of transformer architectures for electrophysiological (EEG) representation learning."
 season: spring 2022
 assets: none
 type: blog

@@ -1,13 +1,13 @@
 ---
 title: "Exploratory Interstitial Fluid Project Patents"
-excerpt: "We shutdown our investigation of a wearable lab and micro-needle array for online proteome analysis. Some patents from the effort apear here."
+excerpt: "We shut down our investigation of a wearable lab and micro-needle array for online proteome analysis. Some patents from the effort appear here."
 season: summer 2022
 assets: none
 type: blog
 layout: post
 ---
 
-This project investigated how we could use online extraction and analysis of human interstitial fluid as a technique for monitoring health outcomes like acute kidney injury in humans.  
+This project investigated how we could use online extraction and analysis of interstitial fluid as a technique for monitoring health outcomes like acute kidney injury in humans.  
 
 *Reconstruction of sparse biomedical data* 
 
