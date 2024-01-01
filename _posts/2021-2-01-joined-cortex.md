@@ -4,7 +4,7 @@ excerpt: "I joined the Cortex team at X. We do math, science, and machine learni
 season: winter 2021
 assets: none
 type: blog
-layout: external
+layout: post
 ---
 
 I joined the Cortex team at X. We do math, science, and machine learning for zero-to-one projects.
