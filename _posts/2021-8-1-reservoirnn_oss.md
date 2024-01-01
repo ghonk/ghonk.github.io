@@ -4,7 +4,7 @@ excerpt: "We open-source our work enabling the use of adaptable reservoir layers
 season: summer 2021
 assets: none
 type: blog
-layout: external
+layout: post
 ---
 
-Check out the `reservoir_nn` package that enables user to BYOR - Bring your won reservoir! - and use the connectivity matrix as a plug-and-play layer in any arbitrary neural network built in Keras. Find the library [here](https://github.com/keras-team/reservoir_nn) 
+Check out the `reservoir_nn` package that enables user to BYOR - Bring your won reservoir! - and use the connectivity matrix as a plug-and-play layer in any arbitrary neural network built in Keras. Find the library [here](https://github.com/keras-team/reservoir_nn). 
