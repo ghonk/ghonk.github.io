@@ -1,6 +1,6 @@
 ---
 title: "Exploratory Interstitial Fluid Project Patents"
-excerpt: "We shutdown our investigation of a wearable lab and micro-needle array for online proteome analysis. Some patents from the effort apeear here."
+excerpt: "We shutdown our investigation of a wearable lab and micro-needle array for online proteome analysis. Some patents from the effort apear here."
 season: summer 2022
 assets: none
 type: blog

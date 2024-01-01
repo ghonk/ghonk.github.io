@@ -1,6 +1,6 @@
 ---
 title: "Reservoir  Patents"
-excerpt: "Patents filed for our effort to deploy facsimiles of real biological connectomes as interchangeable reservoirs in artifical neural networks."
+excerpt: "Patents filed for our effort to deploy facsimiles of real biological connectomes as interchangeable reservoirs in artificial neural networks."
 season: summer 2022
 assets: none
 type: blog
