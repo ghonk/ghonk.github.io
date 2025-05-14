@@ -188,7 +188,6 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 48em) {
   .overview-text {
-    /* margin-top: 2rem; Spacing for desktop - removed for flex centering */
     text-align: left;
   }
 }
