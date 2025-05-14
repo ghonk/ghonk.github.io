@@ -165,3 +165,25 @@ a.sidebar-nav-item:focus {
     margin-right: 22rem;
   }
 }
+
+/*
+ * Overview text
+ *
+ * Styling for the overview text section on the about page.
+ */
+
+.overview-text {
+  text-align: center;
+}
+
+@media (max-width: 47.99em) {
+  .overview-text {
+    margin-top: 1rem; /* Closer to the banner on mobile */
+  }
+}
+
+@media (min-width: 48em) {
+  .overview-text {
+    margin-top: 2rem; /* Spacing for desktop */
+  }
+}
