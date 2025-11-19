@@ -6,7 +6,6 @@ season: summer 2019
 assets: none
 type: pdf
 external_url: /pdfs/manuscripts/honke-et-al-psyarxiv-n400-similarity.pdf
-layout: external
 ---
 
 

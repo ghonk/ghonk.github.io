@@ -4,7 +4,6 @@ excerpt: "Patents filed for our effort to deploy facsimiles of real biological c
 season: summer 2022
 assets: none
 type: blog
-layout: post
 ---
 
 This project investigated the effectiveness of using the connectivity structure of real biological connectomes (e.g., Drosophila) as interchangeable reservoir layers in SoTA neural architectures like UNets, LSTMs, and Transformers.  

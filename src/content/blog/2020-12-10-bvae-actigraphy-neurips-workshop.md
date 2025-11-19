@@ -6,6 +6,5 @@ assets: none
 tags: machine learning, unsupervised learning, psychopathology, actigraphy
 type: pdf
 external_url: https://nips.cc/virtual/2020/19556
-layout: external
 ---
 

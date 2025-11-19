@@ -6,7 +6,6 @@ season: summer 2018
 assets: none
 type: pdf
 external_url: /pdfs/manuscripts/honke-and-kurtz-2018.pdf
-layout: external
 ---
 
 

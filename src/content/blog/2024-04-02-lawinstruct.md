@@ -4,5 +4,4 @@ excerpt: "Exploring the effectiveness of instruction-tuning data mixtures for le
 season: spring 2025
 type: pdf
 external_url: https://arxiv.org/abs/2404.02127
-layout: external
 ---

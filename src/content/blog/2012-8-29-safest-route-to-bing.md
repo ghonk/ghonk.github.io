@@ -4,7 +4,6 @@ excerpt: Safest Bike Route from Binghamton (city) to Binghamton (university)
 tags: cycling, binghamton, biking
 season: summer 2012
 type: blog
-layout: post
 ---
 
 Hello! Hopefully you found this page because you were looking for a convenient and safe route to Binghamton University from anywhere in Binghamton "proper". 

@@ -6,5 +6,4 @@ season: fall 2019
 assets: none
 type: pdf
 external_url: https://cyber.harvard.edu/story/2019-10/comparative-approaches-disinformation
-layout: external
 ---

@@ -4,7 +4,6 @@ excerpt: "Accepted a research scientist role focused on computational neursoscie
 season: summer 2019
 assets: none
 type: blog
-layout: post
 ---
 
 And that's all I can say about that.

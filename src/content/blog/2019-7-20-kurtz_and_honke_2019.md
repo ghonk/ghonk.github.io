@@ -8,7 +8,6 @@ season: summer 2019
 assets: none
 type: pdf
 external_url: /pdfs/manuscripts/kurtz-and-honke-2019-category-status.pdf
-layout: external
 ---
 
 

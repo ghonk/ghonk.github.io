@@ -6,5 +6,4 @@ season: fall 2014
 assets: none
 type: pdf
 external_url: /pdfs/manuscripts/Gentner-et-al-2016-Museum.pdf
-layout: external
 ---

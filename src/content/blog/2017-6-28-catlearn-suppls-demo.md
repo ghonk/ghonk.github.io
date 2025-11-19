@@ -4,7 +4,6 @@ excerpt: Brief introduction to machine learning and cognitive modeling with Catl
 tags: machine learning, cognitive modeling, catlearn
 season: summer 2017
 type: blog
-layout: post
 ---
 
 

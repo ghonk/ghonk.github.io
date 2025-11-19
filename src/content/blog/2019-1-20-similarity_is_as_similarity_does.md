@@ -6,7 +6,6 @@ season: winter 2019
 assets: none
 type: pdf
 external_url: http://kurtzlab.psychology.binghamton.edu/publications/honke%20and%20kurtz%202019.pdf
-layout: external
 ---
 
 

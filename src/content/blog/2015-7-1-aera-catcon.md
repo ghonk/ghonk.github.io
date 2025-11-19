@@ -6,6 +6,5 @@ season: summer 2015
 assets: none
 type: pdf
 external_url: /pdfs/manuscripts/honke-et-al-2015.pdf
-layout: external
 ---
 

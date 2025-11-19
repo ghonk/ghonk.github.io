@@ -6,6 +6,5 @@ season: spring 2019
 assets: none
 type: pdf
 external_url: https://arxiv.org/pdf/1905.10412.pdf
-layout: external
 ---
 

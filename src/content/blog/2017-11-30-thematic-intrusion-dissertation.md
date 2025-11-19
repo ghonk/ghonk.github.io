@@ -6,5 +6,4 @@ season: fall 2017
 assets: none
 type: pdf
 external_url: /pdfs/manuscripts/honke2017final.pdf
-layout: external
 ---

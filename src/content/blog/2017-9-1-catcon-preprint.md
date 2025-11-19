@@ -6,7 +6,6 @@ season: fall 2017
 assets: none
 type: pdf
 external_url: /pdfs/manuscripts/kurtz-and-honke-psyarxiv-catcon.pdf
-layout: external
 ---
 
 Yay open science

@@ -6,6 +6,5 @@ season: spring 2018
 assets: none
 type: pdf
 external_url: /pdfs/manuscripts/gentner_2_1.pdf
-layout: external
 ---
 

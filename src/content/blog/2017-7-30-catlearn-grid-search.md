@@ -4,7 +4,6 @@ excerpt: Quick tutorial on grid search with Catlearn and Catlearn Supplementals
 tags: ml, datascience, DIVA
 season: summer 2017
 type: blog
-layout: post
 ---
 
 This is a brief demonstration of the grid search helper functions provided in `catlearn.suppls`. There are both parallelized and non-parallelized versions. 

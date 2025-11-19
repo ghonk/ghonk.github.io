@@ -6,5 +6,4 @@ season: spring 2019
 assets: none
 type: blog
 external_url: https://twitter.com/garretthonke/status/1119623619146125314
-layout: external
 ---

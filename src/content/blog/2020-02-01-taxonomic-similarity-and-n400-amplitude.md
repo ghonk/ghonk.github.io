@@ -6,5 +6,4 @@ season: winter 2020
 assets: none
 type: pdf
 external_url: /pdfs/manuscripts/honke-etal-2020.pdf
-layout: external
 ---

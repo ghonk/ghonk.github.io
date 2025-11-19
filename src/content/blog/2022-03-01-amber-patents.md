@@ -4,7 +4,6 @@ excerpt: "We filed a ton of patents for technology supporting our work on advanc
 season: spring 2022
 assets: none
 type: blog
-layout: post
 ---
 
 We filed a ton of patents for technology supporting our work on advanced diagnostics and monitoring for mental health including filings on the earliest known use of transformer architectures for electrophsiological representation learning.

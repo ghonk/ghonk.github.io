@@ -6,5 +6,4 @@ season: spring 2017
 assets: none
 type: code
 external_url: https://CRAN.R-project.org/package=catlearn
-layout: external
 ---
