@@ -2,7 +2,11 @@ name: Deploy Astro site to GitHub Pages
 
 on:
   push:
+<<<<<<< HEAD
     branches: ["master"]
+=======
+    branches: ["main"]
+>>>>>>> refs/remotes/origin/master
   workflow_dispatch:
 
 permissions:
@@ -28,7 +32,11 @@ jobs:
           cache: 'npm'
       
       - name: Install dependencies
+<<<<<<< HEAD
         run: npm install
+=======
+        run: npm ci
+>>>>>>> refs/remotes/origin/master
       
       - name: Build site
         run: npm run build
