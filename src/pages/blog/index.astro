@@ -1,0 +1,129 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+
+// Sort posts by date (descending) - assuming filename contains date or we can parse it
+// Actually, the legacy site grouped by 'season'.
+// We need to group by season. The season string is like "summer 2012", "winter 2022".
+// We might need a custom sort order for seasons, or just rely on the order they appear or date.
+// Let's try to sort by filename date first, then group.
+
+// Helper to parse date from filename YYYY-MM-DD-title.md
+function getDateFromSlug(slug: string) {
+    const match = slug.match(/^(\d{4})-(\d{1,2})-(\d{1,2})-/);
+    if (match) {
+        return new Date(parseInt(match[1]), parseInt(match[2]) - 1, parseInt(match[3]));
+    }
+    return new Date(0);
+}
+
+const sortedPosts = posts.sort((a, b) => {
+    return getDateFromSlug(b.slug).getTime() - getDateFromSlug(a.slug).getTime();
+});
+
+// Group by season
+const seasonGroups = new Map<string, typeof posts>();
+sortedPosts.forEach(post => {
+    const season = post.data.season || 'Other';
+    if (!seasonGroups.has(season)) {
+        seasonGroups.set(season, []);
+    }
+    seasonGroups.get(season)!.push(post);
+});
+
+// We want to iterate seasons in the order they appear in the sorted posts (newest first)
+const seasons = [];
+const seenSeasons = new Set();
+sortedPosts.forEach(post => {
+    const season = post.data.season || 'Other';
+    if (!seenSeasons.has(season)) {
+        seasons.push(season);
+        seenSeasons.add(season);
+    }
+});
+
+---
+
+<Layout title="blog">
+    <style>
+        #content {
+            width: 100%;
+        }
+        
+        .seasontable, .seasontable td, .seasontable tr {
+            border: none !important;
+            background-color: transparent !important;
+        }
+
+        .typecell {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            font-weight: bold;
+            color: #555;
+            display: inline-block;
+            min-width: 4.5em;
+            border: none !important; /* Ensure cell has no border */
+        }
+        
+        .typecell a {
+            color: inherit;
+            text-decoration: none;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            padding: 4px 8px;
+            border: 1px solid black !important;
+            display: inline-block;
+            width: 4.5em;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        /* Add specific colors for types if needed, or rely on default border */
+        
+        .internalurl a {
+            font-size: 0.5em;
+            float: right;
+            padding-left: 3px;
+            color: #B0BEC5;
+        }
+
+        img.desaturate {
+            filter: grayscale(100%);
+        }
+    </style>
+
+    <h1>blog | news | updates</h1>
+
+    <div class="posts">
+        {seasons.map(season => (
+            <div>
+                <h2>{season}</h2>
+                <table class="seasontable">
+                    {seasonGroups.get(season)!.map(post => {
+                        const isBlog = post.data.type === 'blog';
+                        const url = isBlog ? `/blog/${post.slug}` : post.data.external_url;
+                        
+                        return (
+                            <tr>
+                                <td class={`typecell ${post.data.type}`}>
+                                    <a href={url}>{post.data.type}</a>
+                                </td>
+                                <td class="descriptioncell">
+                                    {post.data.excerpt}
+                                    {!isBlog && (
+                                        <span class="internalurl">
+                                            <a href={`/blog/${post.slug}`}>[perma]</a>
+                                        </span>
+                                    )}
+                                </td>
+                            </tr>
+                        );
+                    })}
+                </table>
+            </div>
+        ))}
+    </div>
+</Layout>

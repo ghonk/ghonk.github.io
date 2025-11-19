@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang="en-us"> <head><meta charset="UTF-8"><meta name="author" content="Garrett Honke"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="http://gmpg.org/xfn/11" rel="profile"><meta http-equiv="X-UA-Compatible" content="IE=edge"><link rel="icon" type="image/x-icon" href="/favicon.ico"><meta name="generator" content="Astro v5.15.9"><title>Grid Search with Catlearn and Catlearn Supplementals &middot; garrett honke</title><meta name="description" content="computational neuroscientist"><!-- Scripts --><script type="module" src="/_astro/Layout.astro_astro_type_script_index_0_lang.CF3BTHYQ.js"></script><!-- CSS --><link rel="stylesheet" href="/css/poole.css"><link rel="stylesheet" href="/css/syntax.css"><link rel="stylesheet" href="/css/hyde.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface"><!-- RSS --><link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml"></head> <body> <div class="sidebar"> <div class="container sidebar-sticky"> <div class="sidebar-about"> <h1> <a href="/">
+garrett honke
+</a> </h1> <p class="lead">computational neuroscientist</p> </div> <nav class="sidebar-nav"> <a class="sidebar-nav-item" href="/">about</a> <a class="sidebar-nav-item" href="/blog">blog</a> <a class="sidebar-nav-item" href="/cv">cv</a> <a href="http://www.twitter.com/garretthonke" class="fa fa-twitter"></a> <a href="https://github.com/ghonk"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="https://scholar.google.com/citations?user=WPewiKcAAAAJ&hl=en" class="fa fa-google"></a> <a href="https://stackexchange.com/users/4275635/ghonke?tab=accounts"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a> <a href="https://www.linkedin.com/in/garretthonke"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </nav> </div> </div> <div class="content container">  <div class="post"> <h1 class="post-title">Grid Search with Catlearn and Catlearn Supplementals</h1> <span class="post-date">summer 2017</span> <p>This is a brief demonstration of the grid search helper functions provided in <code>catlearn.suppls</code>. There are both parallelized and non-parallelized versions.</p>
+<p>load libraries</p>
+<p>{% highlight r %}
+library(catlearn)
+library(catlearn.suppls)
+{% endhighlight %}</p>
+<p><em>initialize variables.</em> Create a named list for each hyperparameter you plan to test in the grid search, specify how many random model initializations you’d like to average across to calculate response probabilities for each parameter combination.</p>
+<p>{% highlight r %}</p>
+<h1 id="-parameter-list"># parameter list</h1>
+<p>short_param_list &#x3C;- list(beta_val = c(0, 1, 2, 3),
+learning_rate = c(.05, .10, .15),
+num_hids = c(4, 5, 6))</p>
+<h1 id="long_param_list---listbeta_val--c0-1-2-3-4-5-6-7-8-9-10">long_param_list &#x3C;- list(beta_val = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10),</h1>
+<h1 id="learning_rate--c05-10-15-20-25-35">learning_rate = c(.05, .10, .15, .20, .25, .35),</h1>
+<h1 id="num_hids--c4-5-6-10-20">num_hids = c(4, 5, 6, 10, 20))</h1>
+<h1 id="--number-of-initializations"># # number of initializations</h1>
+<p>num_inits = 4</p>
+<h1 id="--data"># # data</h1>
+<h1 id="input_list---get_test_inputstype1">input_list &#x3C;- get_test_inputs(‘type1’)</h1>
+<p>input_list &#x3C;- get_test_inputs(‘type4’)</p>
+<h1 id="--fit-type"># # fit type</h1>
+<p>fit_type &#x3C;- ‘bestacc’</p>
+<h1 id="--fit-vector"># # fit vector</h1>
+<p>crit_fit_vector &#x3C;- NULL
+{% endhighlight %}</p>
+<p>run it</p>
+<p>{% highlight r %}</p>
+<h1 id="--single-core"># # single core</h1>
+<p>system.time(gs_output &#x3C;- diva_grid_search(short_param_list, num_inits, input_list))
+{% endhighlight %}</p>
+<p>{% highlight text %}</p>
+<h2 id="user--system-elapsed">user  system elapsed</h2>
+<h2 id="395----000----399">3.95    0.00    3.99</h2>
+<p>{% endhighlight %}</p>
+<p>{% highlight r %}</p>
+<h1 id="--parallelized"># # parallelized</h1>
+<p>system.time(gs_output &#x3C;- diva_grid_search_par(short_param_list, num_inits, input_list))
+{% endhighlight %}</p>
+<p>{% highlight text %}</p>
+<h2 id="user--system-elapsed-1">user  system elapsed</h2>
+<h2 id="003----000----304">0.03    0.00    3.04</h2>
+<p>{% endhighlight %}</p>
+<p>examine the results with <code>plot_training</code></p>
+<p>{% highlight r %}
+plot_training(lapply(gs_output, function(x) x$resp_probs))
+{% endhighlight %}</p>
+<p><img src="/assets/rfigs/unnamed-chunk-16-1.svg" alt="plot of chunk unnamed-chunk-16"></p>
+<p>examine the detailed results of a grid search run</p>
+<p>{% highlight r %}</p>
+<h1 id="--how-many-paramter-settings-did-we-have"># # how many paramter settings did we have?</h1>
+<p>(n_models &#x3C;- length(gs_output))
+{% endhighlight %}</p>
+<p>{% highlight text %}</p>
+<h2 id="1-36">[1] 36</h2>
+<p>{% endhighlight %}</p>
+<p>{% highlight r %}</p>
+<h1 id="--what-was-the-accuracy-distribution"># # what was the accuracy distribution?</h1>
+<p>final_accuracy &#x3C;- lapply(gs_output, function(x) {x$resp_probs[12]})
+plot(1:n_models, final_accuracy)
+{% endhighlight %}</p>
+<p><img src="/assets/rfigs/unnamed-chunk-17-1.svg" alt="plot of chunk unnamed-chunk-17"></p>
+<p>{% highlight r %}</p>
+<h1 id="--what-parameter-setting-had-the-best-performance"># # what parameter setting had the best performance?</h1>
+<p>gs_output[[which.max(final_accuracy)]]$params
+{% endhighlight %}</p>
+<p>{% highlight text %}</p>
+<h2 id="beta_val-learning_rate-num_hids">beta_val learning_rate num_hids</h2>
+<h2 id="33--------0----------015--------6">33        0          0.15        6</h2>
+<p>{% endhighlight %}</p>
+<p>{% highlight r %}</p>
+<h1 id="--what-parameter-setting-had-the-worst-perfomance"># # what parameter setting had the worst perfomance?</h1>
+<p>gs_output[[which.min(final_accuracy)]]$params
+{% endhighlight %}</p>
+<p>{% highlight text %}</p>
+<h2 id="beta_val-learning_rate-num_hids-1">beta_val learning_rate num_hids</h2>
+<h2 id="7--------2-----------01--------4">7        2           0.1        4</h2>
+<p>{% endhighlight %}</p>
+<p>{% highlight r %}</p>
+<h1 id="--plot-em"># # plot em</h1>
+<p>plot_training(list(gs_output[[which.max(final_accuracy)]]$resp_probs,
+gs_output[[which.min(final_accuracy)]]$resp_probs))
+{% endhighlight %}</p>
+<p><img src="/assets/rfigs/unnamed-chunk-17-2.svg" alt="plot of chunk unnamed-chunk-17"></p>
+<p>{% highlight r %}</p>
+<h1 id="--what-comes-as-output-for-each-parameter-setting"># # what comes as output for each parameter setting?</h1>
+<p>names(gs_output[[which.max(final_accuracy)]])
+{% endhighlight %}</p>
+<p>{% highlight text %}</p>
+<h2 id="1-resp_probs-params-----st">[1] “resp_probs” “params”     “st”</h2>
+<p>{% endhighlight %}</p>
+<p>{% highlight r %}</p>
+<h1 id="--plot-the-training-curves-for-a-parameter-subset-hid-units--5"># # plot the training curves for a parameter subset (hid units = 5)</h1>
+<p>hidunit5_respprobs &#x3C;- list()
+for (i in 1:length(gs_output)) {
+if (gs_output[[i]]$params$num_hids == 5){
+hidunit5_respprobs[[paste0(i)]] &#x3C;- gs_output[[i]]$resp_probs
+}
+}</p>
+<h1 id="--how-many"># # how many?</h1>
+<p>(n_models &#x3C;- length(hidunit5_respprobs))
+{% endhighlight %}</p>
+<p>{% highlight text %}</p>
+<h2 id="1-12">[1] 12</h2>
+<p>{% endhighlight %}</p>
+<p>{% highlight r %}</p>
+<h1 id="--accuracy"># # accuracy?</h1>
+<p>plot(1:n_models, unlist(lapply(hidunit5_respprobs, function(x) x[[12]])))
+{% endhighlight %}</p>
+<p><img src="/assets/rfigs/unnamed-chunk-17-3.svg" alt="plot of chunk unnamed-chunk-17"></p>
+<p>{% highlight r %}
+plot_training(hidunit5_respprobs)
+{% endhighlight %}</p>
+<p><img src="/assets/rfigs/unnamed-chunk-17-4.svg" alt="plot of chunk unnamed-chunk-17"></p> </div>  </div> </body></html>
