@@ -5,8 +5,10 @@ email: garretthonke@gmail.com
 output:
   pdf_document:
     latex_engine: pdflatex
-    template: ~/Dropbox/cv/svm-latex-cv.tex
+    template: svm-latex-cv.tex
   html_document: default
+header-includes:
+  - \usepackage{array}
 fontfamily: mathpazo
 fontfamilyoptions: sc, osf
 fontsize: 11pt
@@ -35,13 +37,15 @@ BA Psychology \hfill 2004 - 2008
 
 # Positions
 
-Staff Research Scientist, Google \hfill 2024 - Present
+Staff Research Scientist, Google DeepMind \hfill 2025 - Present
 
-Staff Research Scientist, Google X \hfill 2022 - 2024
+Staff Research Scientist, Google Labs \hfill 2024 - 2025
 
-Senior Research Scientist, Google X \hfill 2021 - 2022
+Staff Research Scientist, X, the Moonshot Factory \hfill 2022 - 2024
 
-Research Scientist, Google X \hfill 2019 - 2021
+Senior Research Scientist, X, the Moonshot Factory \hfill 2021 - 2022
+
+Research Scientist, X, the Moonshot Factory \hfill 2019 - 2021
 
 Research Scientist, New Knowledge \hfill 2018 - 2019
 
@@ -61,7 +65,11 @@ Adult Lab Coordinator, Cognition and Language Laboratory \hfill 2010 - 2012
 Research Assistant, Similarity and Cognition Laboratory \hfill 2005 - 2007
 \linebreak Director: Dr. Arthur B. Markman; University of Texas at Austin
 
-# Refereed Publications and Presentations
+# Publications and Presentations
+
+Gemini Team (2025). Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities. 
+
+Niklaus, J., Zheng, L., McCarthy, A., Hahn, C., Rosen, B., Henderson, P., Honke, G., Liang, P., Manning, C. (2025). LawInstruct: A Resource for Studying Language Model Adaptation to the Legal Domain, NAACL 
 
 Kirchenbauer, J., Honke, G., Somepalli, G., Geiping, J., Ippolito, D., Lee, K., Goldstein, T., & Andre, D. (2024). LMD3: Language Model Data Density Dependence. CoLM 2024
 
@@ -72,7 +80,7 @@ Edwards, C., Lai, T. M., Ros, K., Honke, G., Cho, K., and Ji, H.
 
 Honke, G., Higgins, I., Thigpen, N., Miskovic, V., Link, K., Duan, S., Gupta, P., Klawohn, J., & Hajcak, G. (2021). Representation learning for improved interpretability and classification accuracy of clinical factors from EEG. arXiv:2010.15274. ICLR 2021.
 
-Cakmak, A. S., Thigpen, N., Honke, G., Alday, E. P., Rad, A, B.,, Adaimi, R., Chang, C. J., Li, Q., Gupta, P., Neylan, T., McLean, S. A., & Clifford, G. D. (2020). Using Convolutional Variational Autoencoders to Predict Post-Trauma Health Outcomes from Actigraphy Data. NeurIPS 2020 ML4MH workshop, accepted as a spotlight talk.
+Cakmak, A. S., Thigpen, N., Honke, G., Alday, E. P., Rad, A, B., Adaimi, R., Chang, C. J., Li, Q., Gupta, P., Neylan, T., McLean, S. A., & Clifford, G. D. (2020). Using Convolutional Variational Autoencoders to Predict Post-Trauma Health Outcomes from Actigraphy Data. NeurIPS 2020 ML4MH workshop, accepted as a spotlight talk.
 
 Honke, G., Kurtz, K. J., &  Laszlo, S. (2020). Similarity Judgments Predict N400 Amplitude Differences between Taxonomic Category Members and Thematic Associates. *Neuropsychologia, 141*, 107388.
 
@@ -100,11 +108,11 @@ Gentner, D., Goldwater, M. B., Levine, S. C., Ping, R. M., Isiah, A., Honke, G.,
 
 # Patents
 
-[Processing time-domain and frequency-domain representations of eeg data](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WPewiKcAAAAJ&sortby=pubdate&citation_for_view=WPewiKcAAAAJ:WbkHhVStYXYC) + [Resampling eeg trial data](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WPewiKcAAAAJ&sortby=pubdate&citation_for_view=WPewiKcAAAAJ:Tiz5es2fbqcC) + [EEG signal representations using auto-encoders](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WPewiKcAAAAJ&sortby=pubdate&citation_for_view=WPewiKcAAAAJ:u9iWguZQMMsC) + [Attention encoding stack in aggregation of data](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WPewiKcAAAAJ&sortby=pubdate&citation_for_view=WPewiKcAAAAJ:XiSMed-E-HIC) + [Attention encoding stack in EEG trial aggregation](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WPewiKcAAAAJ&sortby=pubdate&citation_for_view=WPewiKcAAAAJ:p2g8aNsByqUC) + [Processing eeg data with twin neural networks](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WPewiKcAAAAJ&sortby=pubdate&citation_for_view=WPewiKcAAAAJ:OU6Ihb5iCvQC) + [Processing time-frequency representations of EEG data using neural networks](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WPewiKcAAAAJ&sortby=pubdate&citation_for_view=WPewiKcAAAAJ:uWQEDVKXjbEC) + [De-noising task-specific EEG signals using neural networks](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WPewiKcAAAAJ&sortby=pubdate&citation_for_view=WPewiKcAAAAJ:SP6oXDckpogC) + [Latent Factor Structuring of Psychopathology](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WPewiKcAAAAJ&sortby=pubdate&citation_for_view=WPewiKcAAAAJ:UxriW0iASnsC)
+Please check [Google Scholar](https://scholar.google.com/citations?user=WPewiKcAAAAJ&hl)
 
 # Invited Talks, Non-refereed Posters and Presentations
 
-Corcoran, C., DiResta, R., Morar, D., Honke, G., Dhamani, N., Sullivan, D., Gleason, J., Azunre, P., Kramer, S., Ruppel, B. (2019). Disinformation: Detect to Disrupt. Comparative Approaches to Disinformation workshop hosted by the Berkman Klien Center for Internet and Society, Harvard University.
+beta-VAE representation learning for real world psychopathology. Stanford MedAI
 
 How I spent my summer vacation: Latin American Coldplay Bots take on MTV's Hottest. A primer on analytics for the detection and investigation of coordinated online disinformation campaigns. Texas Analytics Summit 2018, hosted by the Center for Research Analytics at the McCombs Schoool of Business, University of Texas at Austin.
 
@@ -128,16 +136,29 @@ Catlearn Supplementals. `catlearn.suppls` is an `R` package that provides a suit
 
 # Teaching
 
-|Course   |Role   |Semester   |
-|---|---|---|
-| Research Methods                    | Discussion Instructor | Fall 2017 | 
-| Statistical Analysis and Design     | Instructor | Summer 2017 |
-| Experiment Psychology: Perception   | Teaching Assistant  | Spring 2017 |
-| Cognition Lab                       | Instructor |  Fall 2016 |
-| Experimental Psychology: Cognition  | Instructor  | Summer 2016 |
-| General Psychology                  | Teaching Assistant | Spring 2016 |
-| Perception Lab                      | Instructor  | Fall 2015  |
-| Experimental Psychology: Cognition  | Teaching Assistant | Fall 2012 |
+Research Methods \hfill Fall 2017
+\linebreak Discussion Instructor
+
+Statistical Analysis and Design \hfill Summer 2017
+\linebreak Instructor
+
+Experiment Psychology: Perception \hfill Spring 2017
+\linebreak Teaching Assistant
+
+Cognition Lab \hfill Fall 2016
+\linebreak Instructor
+
+Experimental Psychology: Cognition \hfill Summer 2016
+\linebreak Instructor
+
+General Psychology \hfill Spring 2016
+\linebreak Teaching Assistant
+
+Perception Lab \hfill Fall 2015
+\linebreak Instructor
+
+Experimental Psychology: Cognition \hfill Fall 2012
+\linebreak Teaching Assistant
 
 # Ad Hoc Reviewing
 
