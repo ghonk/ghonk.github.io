@@ -1,0 +1,42 @@
+{
+  "$ref": "#/definitions/blog",
+  "definitions": {
+    "blog": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "excerpt": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "string"
+        },
+        "season": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "external_url": {
+          "type": "string"
+        },
+        "layout": {
+          "type": "string"
+        },
+        "assets": {
+          "type": "string"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title"
+      ],
+      "additionalProperties": true
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

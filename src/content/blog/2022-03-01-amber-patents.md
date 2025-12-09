@@ -6,7 +6,7 @@ assets: none
 type: blog
 ---
 
-We filed a ton of patents for technology supporting our work on advanced diagnostics and monitoring for mental health including filings on the earliest known use of transformer architectures for electrophsiological representation learning.
+We filed a ton of patents for technology supporting our work on advanced diagnostics and monitoring for mental health including filings on the earliest known use of transformer architectures for electrophysiological representation learning.
 
 *Latent Factor Structuring of Psychopathology* 
 
