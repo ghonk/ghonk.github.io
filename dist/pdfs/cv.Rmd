@@ -1,0 +1,185 @@
+---
+title: "Curriculum Vitae"
+author: "Garrett Honke"
+email: garretthonke@gmail.com
+output:
+  pdf_document:
+    latex_engine: pdflatex
+    template: svm-latex-cv.tex
+  html_document: default
+header-includes:
+  - \usepackage{array}
+fontfamily: mathpazo
+fontfamilyoptions: sc, osf
+fontsize: 11pt
+geometry: margin=1in
+jobtitle: Computational Neuroscientist
+linkcolor: blue
+fontawesome: yes
+address: Mountain View, California
+updated: yes
+urlcolor: blue
+web: ghonk.github.io
+---
+
+# Education
+*Binghamton University (SUNY)*
+
+PhD Cognitive and Brain Sciences \hfill 2012 - 2017
+
+MSc Cognitive and Brain Sciences \hfill 2012 - 2015
+
+\bigskip
+
+*University of Texas at Austin*
+
+BA Psychology \hfill 2004 - 2008
+
+# Positions
+
+Staff Research Scientist, Google DeepMind \hfill 2025 - Present
+
+Staff Research Scientist, Google Labs \hfill 2024 - 2025
+
+Staff Research Scientist, X, the Moonshot Factory \hfill 2022 - 2024
+
+Senior Research Scientist, X, the Moonshot Factory \hfill 2021 - 2022
+
+Research Scientist, X, the Moonshot Factory \hfill 2019 - 2021
+
+Research Scientist, New Knowledge \hfill 2018 - 2019
+
+Postdoctoral Research Associate, Brain and Machine Laboratory  \hfill 2017 - 2018
+\linebreak Co-appointment at the Watson School of Engineering and Applied Science and \newline the Department of Psychology: Cognitive and Brain Sciences \newline
+Director: Dr. Sarah Laszlo; Binghamton University (SUNY)
+
+Graduate Student, Brain and Machine Laboratory \hfill 2016 - 2017
+\linebreak Director: Dr. Sarah Laszlo; Binghamton University (SUNY)
+
+Graduate Student, Learning and Representation in Cognition Laboratory \hfill 2012 - 2017
+\linebreak Director: Dr. Kenneth J. Kurtz; Binghamton University (SUNY)
+
+Adult Lab Coordinator, Cognition and Language Laboratory \hfill 2010 - 2012
+\linebreak Director: Dr. Dedre Gentner; Northwestern University
+
+Research Assistant, Similarity and Cognition Laboratory \hfill 2005 - 2007
+\linebreak Director: Dr. Arthur B. Markman; University of Texas at Austin
+
+# Publications and Presentations
+
+Gemini Team (2025). Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities.
+
+Niklaus, J., Zheng, L., McCarthy, A., Hahn, C., Rosen, B., Henderson, P., Honke, G., Liang, P., Manning, C. (2025). LawInstruct: A Resource for Studying Language Model Adaptation to the Legal Domain, NAACL
+
+Kirchenbauer, J., Honke, G., Somepalli, G., Geiping, J., Ippolito, D., Lee, K., Goldstein, T., & Andre, D. (2024). LMD3: Language Model Data Density Dependence. CoLM 2024
+
+Patterson, J. D., Snoddy, S., Honke, G., Premo, J., Silliman, D. C., Cavagnetto, A. R., & Kurtz, K. J. (2024). Improving concept learning in education via category construction. *Journal of Educational Psychology, 116*(8), 1455-1478.
+
+Edwards, C., Lai, T. M., Ros, K., Honke, G., Cho, K., and Ji, H.
+(2022) Translation between Molecules and Natural Language. *Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing.* EMNLP 2022.
+
+Honke, G., Higgins, I., Thigpen, N., Miskovic, V., Link, K., Duan, S., Gupta, P., Klawohn, J., & Hajcak, G. (2021). Representation learning for improved interpretability and classification accuracy of clinical factors from EEG. arXiv:2010.15274. ICLR 2021.
+
+Cakmak, A. S., Thigpen, N., Honke, G., Alday, E. P., Rad, A, B., Adaimi, R., Chang, C. J., Li, Q., Gupta, P., Neylan, T., McLean, S. A., & Clifford, G. D. (2020). Using Convolutional Variational Autoencoders to Predict Post-Trauma Health Outcomes from Actigraphy Data. NeurIPS 2020 ML4MH workshop, accepted as a spotlight talk.
+
+Honke, G., Kurtz, K. J., &  Laszlo, S. (2020). Similarity Judgments Predict N400 Amplitude Differences between Taxonomic Category Members and Thematic Associates. *Neuropsychologia, 141*, 107388.
+
+Kurtz, K. J., & Honke, G. (2020). Sorting out the problem of inert knowledge: Category construction to promote spontaneous transfer. *Journal of Experimental Psychology: Learning, Memory, and Cognition.46*(5), 803–821.
+
+Dhamani, N., Azunre, P., Corcoran, C., Honke, G., Gleason, J. L., Kramer, S., & Morgan, J. (2019). Using Deep Networks and Transfer Learning to Address Disinformation. ICML 2019 AI for Social Good Workshop.
+
+Honke, G. & Kurtz, K. J. (2019). Similarity is as Similarity Does? A Critical Inquiry into the Effect of Thematic Association on Similarity. *Cognition, 186*, 115-138.
+
+Gentner, D., Simms, N., Kurtz, K. J., Honke, G., Snoddy, S., Forbus, K. D., Richland, L. E., Matlen, B. J., Lyons, E. M., & Klostermann, E. (2018). Relational Categories: Why they're Important and How they're Learned. In C. Kalish, M. Rau, T. Rogers, & J. Zhu (Ed.), *Proceedings of the 40^th^ annual conference of the Cognitive Science Society* (pp. 27-28). Austin, TX: Cognitive Science Society.
+
+Premo, J., Cavagnetto, A. R., Honke, G., & Kurtz, K. J. (2018). Categories in Conflict: Combating the application of an intuitive conception of inheritance with category construction. *Journal of Research in Science Teaching, 0*, 1-21.
+
+Azunre, P., Corcoran, C., Sullivan, D., Honke, G., Ruppel, R., Verma, S., &
+Morgan, J. (2018). Abstractive Tabular Dataset Summarization via Knowledge Base Semantic Embeddings. arXiv:1804.01503 [cs.AI]. ICML 2018 AutoML workshop.
+
+Honke, G. R., Conaway, N. B., & Kurtz, K. J. (2016). Switch it up: Learning categories via feature switching. In A. Papafragou, D. Grodner, D. Mirman, & J. Trueswell
+(Eds.), *Proceedings of the 38^th^ annual conference of the Cognitive Science Society* (pp. 2693-2698). Austin, TX: Cognitive Science Society.
+
+Gentner, D., Levine, S. C., Ping, R., Isaia, A., Dhillon, S., Bradley, C., & Honke, G. (2016). Rapid learning in a children's museum via analogical comparison. *Cognitive Science, 40*(1), 224-240.
+
+Honke, G., Cavagnetto, A. R., Kurtz, K. J., Patterson, J. D., Conaway, N. B., Tao, Y., & Marr, J. C. (2015). Promoting Transfer and Mastery of Evolution Concepts with Category Construction. Paper presented at the American Educational Research Association annual meeting, Chicago, IL.
+
+Gentner, D., Goldwater, M. B., Levine, S. C., Ping, R. M., Isiah, A., Honke, G., & Bradley, C. (2015). Spatial language and spatial comparison combine to support children's learning. *Cognitive Processing, 16*, S38-S38.
+
+# Patents
+
+Please check [Google Scholar](https://scholar.google.com/citations?user=WPewiKcAAAAJ&hl)
+
+# Invited Talks, Non-refereed Posters and Presentations
+
+beta-VAE representation learning for real world psychopathology. Stanford MedAI
+
+How I spent my summer vacation: Latin American Coldplay Bots take on MTV's Hottest. A primer on analytics for the detection and investigation of coordinated online disinformation campaigns. Texas Analytics Summit 2018, hosted by the Center for Research Analytics at the McCombs Schoool of Business, University of Texas at Austin.
+
+Kurtz, K. J., Cavagnetto, A. R., Honke, G., Conaway, N. B., Patterson, J. D., Marr, J. C. & Tao, Y. (2014). Optimizing the category construction task to promote learning and transfer of knowledge in classroom instruction. In P. Bello, M. Guarini, M. McShane, & B. Scassellati (Eds.), *Proceedings of the 36^th^ Annual Conference of the Cognitive Science Society.* Austin, TX: Cognitive Science Society.
+
+Kurtz, K. J., & Honke, G. (2013). Self-generated analogies promote spontaneous transfer. Poster presented at the 54^th^ annual meeting of the Psychonomic Society, Toronto, ON.
+
+Honke, G., Gentner, D., Forbus, K., Cohen, C., Chang, M., Lovett, A., & Usher, J. (2012). Using CogSketch to support learning cross-sectional reasoning. Poster presented at the National Science Foundation site visit for the Spatial Intelligence and Learning Center (SILC). Philadelphia, PA.
+
+# Open Source Software
+
+`reservoir_nn` is a package that enables the use of reservoir computing architectures in Keras. It enables the flexible creation of reservoir layers that can be used just like any other type of Keras layer. [github](https://github.com/keras-team/reservoir_nn)
+
+`SIMON`: a character-level CNN + LSTM for text classification. Transfer learn with the model to make inferences about class membership of text data, e.g., age prediction, spam classification, text similarity for arbitrary classes, etc. [arXiv](https://arxiv.org/abs/1901.08456)
+
+CatLearn DIVA: the DIVergent Autoencoder implemented in `R` (2016). Available as a module in the `catlearn` `R` Package for computational modelling of formal psychological theories. `catlearn` is a framework and archive for distributed collaboration in formal modeling in psychology. [r-forge](http://catlearn.r-forge.r-project.org)
+
+Wills, A. J., Edmunds, C. E., Kurtz, K. J., & Honke, G. A Practical Introduction to Distributed Collaboration for Formal Modeling: A Half-day Tutorial. Tutorial at the 50^th^ Annual Meeting of the Society for Mathematical Psychology, University of Warwick, UK.
+
+Catlearn Supplementals. `catlearn.suppls` is an `R` package that provides a suite of helper functions for cognitive modeling under the `catlearn` framework. [github](http://www.github.com/ghonk/catlearn.suppls)
+
+# Teaching
+
+Research Methods \hfill Fall 2017
+\linebreak Discussion Instructor
+
+Statistical Analysis and Design \hfill Summer 2017
+\linebreak Instructor
+
+Experiment Psychology: Perception \hfill Spring 2017
+\linebreak Teaching Assistant
+
+Cognition Lab \hfill Fall 2016
+\linebreak Instructor
+
+Experimental Psychology: Cognition \hfill Summer 2016
+\linebreak Instructor
+
+General Psychology \hfill Spring 2016
+\linebreak Teaching Assistant
+
+Perception Lab \hfill Fall 2015
+\linebreak Instructor
+
+Experimental Psychology: Cognition \hfill Fall 2012
+\linebreak Teaching Assistant
+
+# Ad Hoc Reviewing
+
+Psychophysiology
+
+PLOS One
+
+Acta Psychologica
+
+ICML
+
+Behavorial Research Methods
+
+Cognitive Science Society
+
+Cognitive Processing
+
+Cognitive Psychology
+
+Journal of Experimental Psychology: Learning, Memory, and Cognition
+
+Memory and Cognition
+
+Psychological Science

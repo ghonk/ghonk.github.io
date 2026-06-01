@@ -12,6 +12,6 @@ This project investigated the effectiveness of using the connectivity structure 
 
 [Here](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WPewiKcAAAAJ&sortby=pubdate&citation_for_view=WPewiKcAAAAJ:vRqMK49ujn8C) 
 
-*Attention-based brain emulation neural netowrks* 
+*Attention-based brain emulation neural networks*
 
 [Here](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WPewiKcAAAAJ&sortby=pubdate&citation_for_view=WPewiKcAAAAJ:l7t_Zn2s7bgC)
